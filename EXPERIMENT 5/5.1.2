@@ -1,0 +1,14 @@
+a,b,c,d=map(int,input().split())
+print(a+b+c+d)
+aggregate=(a+b+c+d)/4
+print(f"{aggregate:.2f}")
+if(aggregate>75 and aggregate<100):
+	print("Distinction")
+elif(aggregate>=60 and aggregate<75):
+	print("First Division")
+elif(aggregate>=50 and aggregate<60):
+	print("Second Division")
+elif(aggregate>=40 and aggregate<50):
+	print("Third Division")
+elif(aggregate<40 and aggregate>0):
+	print("Fail")
